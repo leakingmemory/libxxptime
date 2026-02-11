@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 4.1)
 project(LibCppSharp)
 
+include(GNUInstallDirs)
+
 set(CMAKE_CXX_STANDARD 23)
 
 add_library(cppsharp SHARED DateOnly.cpp DateTime.cpp Duration.cpp TimeConst.cpp)
